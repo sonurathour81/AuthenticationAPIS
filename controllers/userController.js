@@ -66,7 +66,6 @@ class UserController {
 
     }
 
-
     static changeUserPassword = async (req, res) => {
         const { password, password_confirmation } = req.body
         if (password && password_confirmation) {
@@ -90,7 +89,6 @@ class UserController {
     static loggedUser = async (req, res) => {
         res.status(200).send({ "status": "Success", "message": req.user, })
     }
-
 
     static sendUserPasswordResetEmail = async (req, res) => {
         const { email } = req.body
@@ -117,8 +115,6 @@ class UserController {
             res.status(401).send({ "status": "failed", "message": "Email field is required", })
         }
     }
-
-
 
     static userPasswordReset = async (req, res) => {
         const { password, password_confirmation } = req.body
@@ -150,8 +146,6 @@ class UserController {
         }
 
     }
-
-
 }
 
 export default UserController

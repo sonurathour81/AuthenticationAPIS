@@ -21,7 +21,6 @@ connectDB(DATABASE_URL)
 app.use(express.json())
 
 // Load Routes
-
 app.use('/api/user', userRoutes)
 
 app.listen(PORT, () => {
