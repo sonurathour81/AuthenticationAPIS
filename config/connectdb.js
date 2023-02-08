@@ -3,7 +3,7 @@ mongoose.set("strictQuery", false);
 const connectDB = async (DATABASE_URL) => {
     try {
         const DB_OPTIONS = {
-            dbName: "csc"
+            dbName: "authApp"
         }
         await mongoose.connect(DATABASE_URL, DB_OPTIONS)
         console.log("Connected succesfully")
