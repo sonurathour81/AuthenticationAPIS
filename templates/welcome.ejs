@@ -1,0 +1,12 @@
+<%- include('./includes/header.ejs') %>
+
+<div
+  style="margin: 0 auto; max-width: 720px; padding: 30px 0; font-family: Arial"
+>
+  <h3>Hello, <%= obj.receiver %></h3>
+  <p><%= obj.content %></p>
+  <h4><a href="<%= obj.link %>">Click Here</a> to Reset password</h4>
+  <p><%= obj.link %></p>
+</div>
+
+<%- include('./includes/footer.ejs') %>
